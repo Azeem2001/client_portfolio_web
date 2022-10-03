@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.AboutContainer{
+    // background-color: #0000;
+    color: #fff;
+    margin-top: 1.5rem;
+    font-family: 'Lato', sans-serif;  
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    height: 93vh;
+    .heading svg{
+      font-size: 4.6rem !important;
+      fill: #FA709A;
+  }
+    .heading{
+      
+        width: 7%;
+        height: 85vh;
+        .verticle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #222222;
+            height: 100%;           
+
+            h3{
+            writing-mode: vertical-rl;
+            margin-left: 0;
+            letter-spacing: 1.5rem;
+               
+              span{
+                color: #FA709A;
+              }
+            }
+    }
+
+    }
+    .InfoSection{
+        width: 100%;
+
+        h1{
+            text-align: center;
+           padding-top: 1.5rem;
+           font-weight: 900; 
+           font-size: 2.5rem;
+           span{
+            color: #07FFF7;
+           font-weight: 900; 
+
+          }
+        }
+
+    }
+}

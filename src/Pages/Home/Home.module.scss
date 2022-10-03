@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.HomeContainer{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+     .HomeItem{
+        width: 99%;
+        margin:  1rem auto;
+       
+        .RightSide{
+
+         .Cards{
+            color: #fff;
+
+            .PersonalInfo{
+               font-family: 'Lato', sans-serif;  
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+               height: 100%;    
+               h3{
+                  font-size: 1.5rem;
+                  font-weight: 500;
+                  margin-bottom: 0;
+                }
+                h1{
+                  font-size: 3.5rem;
+                  font-weight: 900;
+                  margin-top: 0.5rem;
+                 margin-bottom: 0; 
+               }
+
+                h2{
+                  font-size: 2rem;
+                  margin-top: 0.5rem;
+                  font-weight: 800;
+                  color: #ffb400;
+                }
+            }
+         }
+        }
+     }
+}
