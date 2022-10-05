@@ -1,55 +1,213 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+
 .AboutContainer{
-    // background-color: #0000;
-    color: #fff;
-    margin-top: 1.5rem;
-    font-family: 'Lato', sans-serif;  
-    display: flex;
-    justify-content:flex-start;
-    align-items: flex-start;
-    height: 93vh;
-    .heading svg{
-      font-size: 4.6rem !important;
-      fill: #FA709A;
-  }
-    .heading{
-      
-        width: 7%;
-        height: 85vh;
-        .verticle{
+    margin-top: 1rem;
+    color: #FFFFFF;
+    width: 100%;
+    font-family: "lato",sans-serif;
+    
+    .LeftSide svg{
+        font-size: 3.5rem !important;
+        fill: #FA709A;
+    }
+    
+    .LeftSide{
+        max-height:100% ;
+        height: 94vh;
+        overflow: hidden;
+        .text{
+            height: 100%;
+            background:#222222 ;
             display: flex;
-            align-items: center;
             justify-content: center;
-            background-color: #222222;
-            height: 100%;           
+            align-items: center;
+            h1{
+                writing-mode: vertical-lr;
+                word-spacing: 10px;
+                letter-spacing: 1rem;
+                font-size: 1.5rem;
 
-            h3{
-            writing-mode: vertical-rl;
-            margin-left: 0;
-            letter-spacing: 1.5rem;
-               
-              span{
-                color: #FA709A;
-              }
+
+                span{
+                    color: #FA709A;
+                }
             }
-    }
-
-    }
-    .InfoSection{
-        width: 100%;
-
-        h1{
-            text-align: center;
-           padding-top: 1.5rem;
-           font-weight: 900; 
-           font-size: 2.5rem;
-           span{
-            color: #07FFF7;
-           font-weight: 900; 
-
-          }
         }
-
+        
     }
+    
+    .RightSide{
+        // scrollbar-gutter: none;
+        margin-left: 2rem;
+        overflow-x: hidden;
+        // overflow-y: scroll;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        height: 94vh;
+       
+        .RightSide::-webkit-scrollbar {
+            width: 12px !important;               /* width of the entire scrollbar */
+          }
+          
+          .RightSide::-webkit-scrollbar-track {
+            background: orange !important;        /* color of the tracking area */
+          }
+          
+          .RightSide::-webkit-scrollbar-thumb {
+            background-color: blue !important;    /* color of the scroll thumb */
+            border-radius: 20px !important;       /* roundness of the scroll thumb */
+            border: 3px solid orange !important;  /* creates padding around scroll thumb */
+          }
+        
+        h2{
+           text-align: center;
+           font-weight: 900;
+           font-size: 2.75rem;
+            span{
+                color: #07FFF7;
+            }
+        }
+        .PersonalData{
+            h3{
+                font-size: 1.5rem;
+            }
+            .Border{
+                border-bottom: 3px solid #FA709A ;
+                width: 50px;
+                border-radius: 8px;
+                margin-top: 0.5rem;
+            }
+            .content{
+                background:#222222;
+                padding: 2rem 4rem 2rem 3rem;
+                
+                
+                .profile{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    img{
+                       width: 400px;
+                       height: 145px;
+                       border-radius: 50%;
+                       display: none;
+                    }
+                    
+                    h5{
+                        font-size: 20px;
+                        // padding-left: 1rem;
+                        line-height: 1.8rem;
+                        text-align: justify;
+                        font-weight: 400;
+                        
+                        color: #9FA0A3;
+                    
+                    }
+                }
+
+                
+                .PersonalInfo svg{
+                    fill: #07FFF7;
+                }
+                .PersonalInfo{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                            
+
+                    strong{
+                        vertical-align: top;
+                        
+                       
+                    }
+                    span{
+                        vertical-align: top;
+                    color: #9FA0A3;
+
+                    }
+                    
+                }
+            }
+        }
+        .Icon svg{
+            vertical-align: middle;
+            fill: #000;
+            background-color: none !important;
+            padding: 0.5rem;
+            border-radius: 50%;
+            background: #fff;
+  
+          }
+          .Icon{
+              padding-top: 1rem;
+              padding-bottom: 2rem;
+       
+              span{
+                  margin-left: 1rem !important;     
+              }
+          }
+    }
+    .Bottons{
+        display: flex;
+        div{
+          margin-right: 0.8rem;
+        }
+    }
+    .ServiceContainer{
+        // height: 90vh;
+        h3{
+            font-size: 1.5rem;
+        }
+        .Border{
+            border-bottom: 3px solid #FA709A ;
+            width: 50px;
+            border-radius: 8px;
+            margin-top: 0.5rem;
+        }
+        .serviceContent{
+            background:#222222;
+            padding: 2rem 4rem 2rem 3rem;
+                
+
+            // div{
+            //     border: 2px solid red;
+            //     padding: 1rem;
+            // }
+        }
+    }
+}
+  
+@media only screen and (max-width:1024px) {
+     
+    .profile{
+        img{
+             display: block  !important;
+        }
+        h5{
+        padding-left: 1.5rem !important;
+        }
+    }
+}
+@media only screen and (max-width:768px) {
+     
+   
+    .content{
+        padding: 1rem !important;
+    }
+    .PersonalInfo{
+      flex-direction: column !important;
+      align-items: flex-start !important;
+    }
+   .profile{
+    flex-direction: column !important;
+    align-items: flex-start !important;
+       img{
+        //    display: block;
+       }
+       h5{
+       padding-left: 0 !important;
+       }
+   }
 }

@@ -13,7 +13,6 @@
 
          .Cards{
             color: #fff;
-
             .PersonalInfo{
                font-family: 'Lato', sans-serif;  
                display: flex;
@@ -43,4 +42,26 @@
          }
         }
      }
+}
+
+@media only screen and (max-width: 1200px){
+    
+   .PersonalInfo{
+      height: 20.7vh;
+ 
+               h3{
+                  font-size: 1rem;
+                  
+                }
+                h1{
+                  font-size: 2.5rem !important;
+                  
+               }
+
+                h2{
+                  font-size: 1.5rem;
+                  
+                }
+            }
+
 }
