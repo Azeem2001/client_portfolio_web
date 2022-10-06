@@ -10,8 +10,11 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import CustomButton from "../../Components/Button/CustomButton";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
+import { useNavigate } from "react-router-dom";
+import CancelIcon from "@mui/icons-material/Cancel";
 
 const MyResume = () => {
+  const navigate = useNavigate();
   return (
     <div className={styled.ResumeContainer}>
       <Grid container>
@@ -32,7 +35,11 @@ const MyResume = () => {
             <h2>
               MY <span>RESUME</span>
             </h2>
-
+            <div className={styled.CrossButton}>
+              <button onClick={() => navigate("/")}>
+                <CancelIcon />
+              </button>
+            </div>
             <div className={styled.SkillContainer}>
               <h3>Skills</h3>
               <p className={styled.Border}></p>
@@ -148,7 +155,7 @@ const MyResume = () => {
               </div>
             </div>
             <div className={styled.FunFact}>
-              <h3>Experience</h3>
+              <h3>Fun Facts</h3>
               <p className={styled.Border}></p>
               <div className={styled.serviceContent}>
                 <Grid container spacing={8}>
@@ -186,11 +193,11 @@ const MyResume = () => {
               </div>
             </div>
             <div className={styled.btn}>
-            <CustomButton
-                    title={"DownLoad"}
-                    item={" Cv"}
-                    Icon={<PictureAsPdfIcon />}
-                  />{" "}
+              <CustomButton
+                title={"DownLoad"}
+                item={" Cv"}
+                Icon={<PictureAsPdfIcon />}
+              />{" "}
             </div>
           </div>
         </Grid>

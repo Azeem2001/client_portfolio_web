@@ -11,11 +11,14 @@ import CustomButton from "../../Components/Button/CustomButton";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 import EmailIcon from "@mui/icons-material/Email";
 import ServiceCard from "../../Components/ServiceCard/ServiceCard";
+import CancelIcon from "@mui/icons-material/Cancel";
+import { useNavigate } from "react-router-dom";
 const About = () => {
   const women1 = "./images/woman.jpg";
+  const navigate = useNavigate();
   return (
     <div className={styled.AboutContainer}>
-      <Grid container>
+      <Grid container flexGrow={"no-wrap"}>
         <Grid item xl={0.7}>
           <div className={styled.LeftSide}>
             <div className={styled.Icon}>
@@ -33,6 +36,11 @@ const About = () => {
             <h2>
               ABOUT <span>ME</span>
             </h2>
+            <div className={styled.CrossButton}>
+              <button onClick={() => navigate("/")}>
+                <CancelIcon />
+              </button>
+            </div>
             <div className={styled.PersonalData}>
               <h3>Personal Info</h3>
               <p className={styled.Border}></p>
@@ -127,29 +135,40 @@ const About = () => {
               <h3>Services</h3>
               <p className={styled.Border}></p>
               <div className={styled.serviceContent}>
-                 <Grid container spacing={5}>
-                     <Grid item xl={6}>
-                      <div>
-                        <ServiceCard heading={"Service 01"} skill={"Web Design"}/>
-                      </div>
-                     </Grid>
-                     <Grid item xl={6}>
-                      <div>
-                      <ServiceCard heading={"Service 02"} skill={"Web Development"}/>
-                      </div>
-                     </Grid>
-                     <Grid item xl={6}>
-                      <div>
-                      <ServiceCard heading={"Service 03"} skill={" UI / UX Design "} />
-                      </div>
-                     </Grid>
-                     <Grid item xl={6}>
-                      <div>
-                      <ServiceCard heading={"Service 04"} skill={" Photography "}/>
-                      </div>
-                     </Grid>
-
-                 </Grid>
+                <Grid container spacing={5}>
+                  <Grid item xl={6}>
+                    <div>
+                      <ServiceCard
+                        heading={"Service 01"}
+                        skill={"Web Design"}
+                      />
+                    </div>
+                  </Grid>
+                  <Grid item xl={6}>
+                    <div>
+                      <ServiceCard
+                        heading={"Service 02"}
+                        skill={"Web Development"}
+                      />
+                    </div>
+                  </Grid>
+                  <Grid item xl={6}>
+                    <div>
+                      <ServiceCard
+                        heading={"Service 03"}
+                        skill={" UI / UX Design "}
+                      />
+                    </div>
+                  </Grid>
+                  <Grid item xl={6}>
+                    <div>
+                      <ServiceCard
+                        heading={"Service 04"}
+                        skill={" Photography "}
+                      />
+                    </div>
+                  </Grid>
+                </Grid>
               </div>
             </div>
           </div>

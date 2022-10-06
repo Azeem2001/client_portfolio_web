@@ -5,6 +5,7 @@ import Grid from "@mui/material/Grid";
 import "./App.scss";
 import About from "./Pages/About/About";
 import MyResume from "./Pages/MyResume/MyResume";
+import ContactMe from "./Pages/ContactMe/ContactMe";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/myResume" element={<MyResume />} />
+                <Route path="/contactme" element={<ContactMe />} />
+
               </Routes>
             </div>
           </Grid>

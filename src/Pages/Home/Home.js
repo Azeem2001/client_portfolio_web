@@ -30,7 +30,11 @@ const Home = ({ title, disc }) => {
                 </div>
               </Grid>
               <Grid item xl={6} lg={6} md={6} sm={6} xs={12}>
-                <Card title={"GET"} disc={"IN TOUCH"} />
+              <div onClick={() => navigate("/contactme")}>
+
+                <Card title={"CONTACT"} disc={"ME"} />
+                </div>
+
               </Grid>
             </Grid>
           </div>

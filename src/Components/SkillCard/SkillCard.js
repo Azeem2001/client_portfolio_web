@@ -30,7 +30,7 @@ const SkillCard = ({
         </div>
         <div className={styled.persentage}>
           <div className={styled.persentagewidth}>
-            <ProgressBar />
+            <ProgressBar auto={"85%"} />
           </div>
         </div>
         <div className={styled.softSkill}>
@@ -42,7 +42,7 @@ const SkillCard = ({
         </div>
         <div className={styled.persentage}>
           <div className={styled.persentagewidth}>
-            <ProgressBar auto={"80%"} />
+            <ProgressBar auto={"75%"} />
           </div>
         </div>
         <div className={styled.softSkill}>
@@ -54,7 +54,7 @@ const SkillCard = ({
         </div>
         <div className={styled.persentage}>
           <div className={styled.persentagewidth}>
-            <ProgressBar />
+            <ProgressBar auto={"65%"} />
           </div>
         </div>{" "}
         <div className={styled.softSkill}>
@@ -66,7 +66,7 @@ const SkillCard = ({
         </div>
         <div className={styled.persentage}>
           <div className={styled.persentagewidth}>
-            <ProgressBar />
+            <ProgressBar auto={"95%"} />
           </div>
         </div>
       </div>
