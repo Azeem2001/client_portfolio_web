@@ -12,24 +12,24 @@ const Home = ({ title, disc }) => {
         <div className={styled.RightSide}>
           <div className={styled.Cards}>
             <Grid container spacing={1}>
-              <Grid item xl={6} lg={6} md={6} sm={6} xs={12}>
+              <Grid padding={1} item xl={6} lg={6} md={6} sm={12} xs={12}>
                 <div className={styled.PersonalInfo}>
                   <h3>HI THERE ! I'M</h3>
                   <h1>LINDA SMITH</h1>
                   <h2>BLOGGER</h2>
                 </div>
               </Grid>
-              <Grid item xl={6} lg={6} md={6} sm={6} xs={12}>
+              <Grid padding={1} item xl={6} lg={6} md={6} sm={12} xs={12}>
                 <div onClick={() => navigate("/about")}>
                   <Card title={"ABOUT"} disc={"ME"} />
                 </div>
               </Grid>
-              <Grid item xl={6} lg={6} md={6} sm={6} xs={12}>
+              <Grid padding={1}  item xl={6} lg={6} md={6} sm={12} xs={12}>
               <div onClick={() => navigate("/myResume")}>
                 <Card title={"MY"} disc={"PORTFOLIO"} xs={12} />
                 </div>
               </Grid>
-              <Grid item xl={6} lg={6} md={6} sm={6} xs={12}>
+              <Grid padding={1} item xl={6} lg={6} md={6} sm={12} xs={12}>
               <div onClick={() => navigate("/contactme")}>
 
                 <Card title={"CONTACT"} disc={"ME"} />

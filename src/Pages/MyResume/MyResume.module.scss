@@ -6,7 +6,7 @@
     font-family: "lato",sans-serif;
     
     .LeftSide svg{
-        font-size: 3.5rem !important;
+        font-size: 3.5rem ;
         fill: #F6D365;
     }
     
@@ -196,3 +196,91 @@
     } 
       
 }
+
+@media only screen and (max-width:1024px) {
+        
+    .WorkHistory svg{
+                    
+        fill: #FFFFFF;
+        font-size: 2.5rem !important;
+    }
+    .WorkHistory{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2rem !important;
+          
+        h1{
+            font-size: 2.5rem !important;
+        }
+        p svg{
+            font-size: 1.5rem !important;
+        }
+        p{
+            strong{
+                vertical-align: top;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width:768px) {
+
+    .LeftSide svg{
+        font-size: 2rem !important;
+       }
+       .LeftSide{
+   
+           .text{
+               h1{
+                   margin: 4px;
+               }
+           }
+       }
+           .RightSide{
+             margin-left: 0.5rem !important;
+             width: 100% !important;
+
+             h2{
+                font-size: 1.8rem !important;
+              
+                
+            }
+            h3{
+                font-size: 1.2rem !important;
+            }
+            .CrossButton{
+                right: 1rem !important;
+                top: 1.5rem !important;
+                button svg{
+                    
+                    font-size: 2rem !important;
+                }
+            }
+             .skillItem{
+                padding: 3rem 1rem 0rem 1rem !important;
+               
+             }
+            .serviceContent{
+                padding: 3rem 1rem 0rem 1rem !important;
+            }
+            
+              
+           }
+           .FunFact{
+            .serviceContent{
+                
+                padding: 3rem 1rem 0rem 1rem !important;
+            
+            }
+           }
+           .btn{
+            padding: 2rem;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+           }
+                
+    }

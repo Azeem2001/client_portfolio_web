@@ -25,8 +25,8 @@ const ContactMe = () => {
   const navigate = useNavigate();
   return (
     <div className={styled.ContactMeContainer}>
-      <Grid container flexGrow={"no-wrap"}>
-        <Grid item xl={0.7}>
+      <Grid container >
+        <Grid item xl={0.7}  >
           <div className={styled.LeftSide}>
             <div className={styled.Icon}>
               <EmailIcon />
@@ -38,7 +38,7 @@ const ContactMe = () => {
             </div>
           </div>
         </Grid>
-        <Grid item xl={11} md={10.5} sm={10} xs={10}>
+        <Grid item xl={11.3} lg={11.3} md={11.3} sm={11.3} xs={11.3}>
           <div className={styled.RightSide}>
             <h2>
               CONTACT <span>INFO</span>
@@ -95,7 +95,7 @@ const ContactMe = () => {
                 </div>
               </div>
             </div>
-            <div className={styled.ContactForm}>
+             <div className={styled.ContactForm}>
               <div className={styled.PersonalData}>
                 <h3>Contact Form</h3>
                 <p className={styled.Border}></p>
@@ -170,7 +170,7 @@ const ContactMe = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> 
           </div>
         </Grid>
       </Grid>

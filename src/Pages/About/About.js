@@ -31,7 +31,7 @@ const About = () => {
             </div>
           </div>
         </Grid>
-        <Grid item xl={11} md={10.5} sm={10} xs={10}>
+        <Grid item xl={11} md={10.5} sm={10.5} xs={10}>
           <div className={styled.RightSide}>
             <h2>
               ABOUT <span>ME</span>
@@ -140,6 +140,7 @@ const About = () => {
                     <div>
                       <ServiceCard
                         heading={"Service 01"}
+                        
                         skill={"Web Design"}
                       />
                     </div>

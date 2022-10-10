@@ -30,7 +30,7 @@ const MyResume = () => {
             </div>
           </div>
         </Grid>
-        <Grid item xl={11} md={10.5} sm={10} xs={10}>
+        <Grid item xl={11} md={10.5} sm={10.7} xs={10.5}>
           <div className={styled.RightSide}>
             <h2>
               MY <span>RESUME</span>
@@ -44,8 +44,8 @@ const MyResume = () => {
               <h3>Skills</h3>
               <p className={styled.Border}></p>
               <div className={styled.skillItem}>
-                <Grid container spacing={5}>
-                  <Grid item xl={6}>
+                <Grid container flexWrap={"wrap"} spacing={5}>
+                  <Grid item width={"50%"} xl={6} sm={12} xs={12}>
                     <SkillCard
                       heading={"Soft SKILLS"}
                       skill={"Leader Ship"}
@@ -58,7 +58,7 @@ const MyResume = () => {
                       persentage3={"95%"}
                     />
                   </Grid>
-                  <Grid item xl={6}>
+                  <Grid width={"50%"} item xl={6} sm={12} xs={12}>
                     <SkillCard
                       heading={"Hard SKILLS"}
                       skill={"HTML5 / CSS3"}
@@ -158,8 +158,8 @@ const MyResume = () => {
               <h3>Fun Facts</h3>
               <p className={styled.Border}></p>
               <div className={styled.serviceContent}>
-                <Grid container spacing={8}>
-                  <Grid item xl={4}>
+                <Grid container  spacing={7.7}>
+                  <Grid item xl={4} md={6} sm={6} xs={12}>
                     <div className={styled.WorkHistory}>
                       <WorkHistoryIcon />
                       <h1>5+</h1>
@@ -169,7 +169,7 @@ const MyResume = () => {
                       </p>
                     </div>
                   </Grid>
-                  <Grid item xl={4}>
+                  <Grid item xl={4} md={6} sm={6} xs={12}>
                     <div className={styled.WorkHistory}>
                       <ThumbUpAltIcon />
                       <h1>40+</h1>
@@ -179,7 +179,7 @@ const MyResume = () => {
                       </p>
                     </div>
                   </Grid>
-                  <Grid item xl={4}>
+                  <Grid item xl={4} md={12} sm={12} xs={12}>
                     <div className={styled.WorkHistory}>
                       <FavoriteIcon />
                       <h1>80+</h1>

@@ -16,3 +16,12 @@
   .MuiInputLabel-outlined{
     color: #66697E !important;
   }
+  @media only screen and (max-width:768px) {
+    .MuiGrid-item{
+        padding-top: 0 !important;
+    }
+    .fixed{
+   
+     margin-top: 1rem;   
+  }
+  }
