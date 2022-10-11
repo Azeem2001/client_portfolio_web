@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.MyBlogContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     .MyBlog{
+       
+        width: 70%;
+        color: #fff;
+           
+        h1{
+            text-align: center;
+            font-family: 'Lato', sans-serif;  
+            font-size: 3.5rem;
+            font-weight: 800;
+            padding-bottom: 4rem;     
+            span{
+                color: #FFB400;
+            }
+        }
+        .leftSide{
+         .Input{
+            // width: 100%;
+            background: #333333;
+            padding: 1.5rem 1rem;
+            margin-top: 1rem;
+            input{
+                width: 100%;
+                padding:1rem 0;
+                font-size: 16px;
+                background: none;
+                border-bottom: 1px solid #2C6E68;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                color: #C7D1D1;
+               
+               
+            }
+            input::placeholder{
+                font-style: italic;
+                font-weight: 200;
+                color: #C7D1D1;
+                opacity: 100;
+
+            }
+            input:focus{
+                outline: none;
+            }
+            
+         }
+         .posts{
+            padding: 1rem 1rem;
+            background: #333333;
+            margin-top: 1rem;
+            .recentPosts{
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                border-bottom: 1px solid #FFB400; 
+                padding-bottom: 0.5rem;
+                padding-top: 1rem;
+               
+                .text{
+                   
+                    h3{
+                        font-family: 'Lato', sans-serif;  
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #FFB400;
+                    }
+                    
+                    p{
+                        font-size: 14px;
+                        font-family: 'Lato', sans-serif;  
+                        color: #C7D1D1;
+                        font-weight: 300;
+ 
+                    }
+                }
+            
+            }
+         }
+        }
+    }
+}

@@ -121,10 +121,10 @@ const About = () => {
                     item={" Cv"}
                     Icon={<PictureAsPdfIcon />}
                   />{" "}
-                  <div>
+                  <div onClick={()=>navigate("/myblog")}>
                     <CustomButton
-                      title={"Contact"}
-                      item={"Me"}
+                      title={"My"}
+                      item={"Blog"}
                       Icon={<EmailIcon />}
                     />{" "}
                   </div>

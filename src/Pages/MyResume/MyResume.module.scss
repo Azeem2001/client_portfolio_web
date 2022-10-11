@@ -16,7 +16,7 @@
         overflow: hidden;
         .text{
             height: 100%;
-            background:#222222 ;
+            background:#333333 ;
             box-shadow: 1px -2px 33px 3px rgba(64, 60, 60, 0.75) inset;
             -webkit-box-shadow: 1px -2px 33px 3px rgba(95, 91, 91, 0.75) inset;
             -moz-box-shadow: 1px -2px 33px 3px rgba(84, 80, 80, 0.75) inset;
@@ -45,10 +45,10 @@
         margin-left: 2rem;
         overflow-x: hidden;
         // overflow-y: scroll;
-        
+        margin-top:1rem;
         scroll-behavior: smooth;
         scrollbar-width: none;
-        height: 92.5vh;
+        height: 90.7vh;
 
         .CrossButton{
             position: absolute;
@@ -87,7 +87,7 @@
             }
 
             .skillItem{
-                background-color: #222222;
+                background-color: #333333;
                 padding: 2rem 3rem 2rem 3rem;
                 border-radius: 8px; 
                 box-shadow: 1px -2px 33px 3px rgba(64, 60, 60, 0.75) inset;
@@ -110,7 +110,7 @@
                 margin-top: 0.5rem;
             }
             .serviceContent{
-                background:#222222;
+                background:#333333;
                 border-radius: 8px;
                 padding: 2rem 4rem 2rem 3rem;
                 box-shadow: 1px -2px 33px 3px rgba(64, 60, 60, 0.75) inset;
@@ -132,7 +132,7 @@
                 margin-top: 0.5rem;
             }
             .serviceContent{
-                background:#222222;
+                background:#333333;
                 border-radius: 8px;
                 padding: 2rem 4rem 2rem 3rem;
                 box-shadow: 1px -2px 33px 3px rgba(64, 60, 60, 0.75) inset;
@@ -153,7 +153,7 @@
                 margin-top: 0.5rem;
             }
             .serviceContent{
-                background:#222222;
+                background:#333333;
                 border-radius: 8px;
                 box-shadow: 1px -2px 33px 3px rgba(64, 60, 60, 0.75) inset;
                 -webkit-box-shadow: 1px -2px 33px 3px rgba(95, 91, 91, 0.75) inset;

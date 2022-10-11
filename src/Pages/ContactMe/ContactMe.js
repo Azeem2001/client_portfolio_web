@@ -38,7 +38,7 @@ const ContactMe = () => {
             </div>
           </div>
         </Grid>
-        <Grid item xl={11.3} lg={11.3} md={11.3} sm={11.3} xs={11.3}>
+        <Grid item xl={11} md={11.3} sm={11.3} xs={11.3}>
           <div className={styled.RightSide}>
             <h2>
               CONTACT <span>INFO</span>
@@ -99,7 +99,7 @@ const ContactMe = () => {
               <div className={styled.PersonalData}>
                 <h3>Contact Form</h3>
                 <p className={styled.Border}></p>
-                <div className={styled.Form}>
+                {/* <div className={styled.Form}>
                   <p>Want to chat? Send me a message!</p>
                   <div className={styled.FormInput}>
                     <Box
@@ -168,7 +168,7 @@ const ContactMe = () => {
                       />
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div> 
           </div>

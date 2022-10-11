@@ -16,6 +16,7 @@
             height: 40px;
             overflow: hidden;
             background-size: 100%;
+            
         }
         
          span:after {
@@ -25,15 +26,11 @@
             right: 0;
             bottom: 0;
             content: "";
-            background-image: linear-gradient(45deg, #ffffff 25%,
-                                                rgba(0, 0, 0, 0) 25%,
-                                                rgba(0, 0, 0, 0) 50%,
-                                                #ffffff 50%,
-                                                #ffffff 75%,
-                                                rgba(0, 0, 0, 0) 75%,
-                                                rgba(0, 0, 0, 0));
-            background-size: 50px 50px;
+;
+            background: -webkit-linear-gradient(45deg, #474f7e 25%, transparent 25%, transparent 50%, #474f7e 50%, #474f7e 75%, transparent 75%, transparent);
+            background-size: 35px 35px;
             opacity: 0.3;
+            
         }
         @-webkit-keyframes animation_bar_1 {
             0% {
