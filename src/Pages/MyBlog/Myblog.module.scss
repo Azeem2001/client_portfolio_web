@@ -7,7 +7,7 @@
     align-items: center;
      .MyBlog{
        
-        width: 70%;
+        width: 80%;
         color: #fff;
            
         h1{
@@ -62,18 +62,28 @@
                 border-bottom: 1px solid #FFB400; 
                 padding-bottom: 0.5rem;
                 padding-top: 1rem;
-               
+
+                 .img{
+                    width: 35%;
+
+                    img{
+                        width: 130px;
+                        height: 90px;
+                    }
+                 }
+                 
                 .text{
-                   
+                    width: 60%;
+                    
                     h3{
                         font-family: 'Lato', sans-serif;  
-                        font-size: 14px;
-                        font-weight: 600;
+                        font-size: 12px;
+                        font-weight: 900;
                         color: #FFB400;
                     }
                     
                     p{
-                        font-size: 14px;
+                        font-size: 12px;
                         font-family: 'Lato', sans-serif;  
                         color: #C7D1D1;
                         font-weight: 300;

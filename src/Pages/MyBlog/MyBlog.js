@@ -22,7 +22,8 @@ const MyBlog = () => {
   };
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [setArticle]);
+  console.log(article[0]?.fields);
   return (
     <div className={styled.MyBlogContainer}>
       <div className={styled.MyBlog}>
@@ -45,24 +46,28 @@ const MyBlog = () => {
               </div>
               <div className={styled.posts}>
                 <h3>RECENT POSTS</h3>
-                <div className={styled.recentPosts}>
-                  <div className={styled.img}>
-                    <img src={blog_1} alt="blog_1" />
-                  </div>
-                  <div className={styled.text}>
-                    <h3>Why Theme Forest in the Best</h3>
-                    <p>Augest 03 2017</p>
-                  </div>
-                </div>
-                <div className={styled.recentPosts}>
-                  <div className={styled.img}>
-                    <img src={blog_1} alt="blog_1" />
-                  </div>
-                  <div className={styled.text}>
-                    <h3>Why Theme Forest in the Best</h3>
-                    <p>Augest 03 2017</p>
-                  </div>
-                </div>
+
+                {article.map((items, index) =>
+                  items?.fields?.blogImage ? (
+                    <div className={styled.recentPosts}>
+                      <div className={styled.img}>
+                        {console.log(
+                          items?.fields.blogImage?.fields?.file?.url
+                        )}
+                        {items?.fields.blogImage ? (
+                          <img
+                            src={items?.fields.blogImage?.fields?.file?.url}
+                            alt={items?.fields?.blogHeading}
+                          />
+                        ) : null}
+                      </div>
+                      <div className={styled.text}>
+                        <h3>{items.fields?.blogHeading}</h3>
+                        <p>{items.fields?.blogDate}</p>
+                      </div>
+                    </div>
+                  ) : null
+                )}
               </div>
             </div>
           </Grid>

@@ -8,7 +8,12 @@ import AddLinkIcon from "@mui/icons-material/AddLink";
 import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 const BlogCard = ({ article }) => {
   const { blogHeading, blogImage, blogContent } = article?.fields;
-
+  let text = blogContent;
+  const [isReadMore, setIsReadMore] = useState(true);
+  const toggleReadMore = () => {
+    setIsReadMore(!isReadMore);
+  };
+ 
   return (
     <>
       {blogHeading ? (
@@ -17,10 +22,20 @@ const BlogCard = ({ article }) => {
           {blogImage ? (
             <img src={blogImage?.fields?.file?.url} alt={blogHeading} />
           ) : null}
-          <p>{blogContent}</p>
-          <div>
+           <p className="text">
+       {isReadMore ? text.slice(0, 250) : text}
+       <span onClick={toggleReadMore}>
+        {isReadMore ?  <div className={styled.Btns} >
             <CustomButton title={"Read"} item={"More"} />
-          </div>
+          </div> :   <div className={styled.Btns}>
+            <CustomButton title={"Read"} item={"Less"} />
+          </div>}
+       </span>
+      </p>
+          {/* <p>{refactortext}
+        
+          </p> */}
+          
           <div className={styled.footer}>
             <div className={styled.footerItem}>
               <p>

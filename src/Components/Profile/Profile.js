@@ -6,7 +6,7 @@ const Profile = ({none}) => {
 
   return (
     <>
-   
+             
           <div className={styled.LeftSide} style={{ display: none }} >
             <img src={women} alt="women" />
           </div>
