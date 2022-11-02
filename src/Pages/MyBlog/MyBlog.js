@@ -6,11 +6,12 @@ import CottageIcon from "@mui/icons-material/Cottage";
 import TextField from "@mui/material/TextField";
 import MyBlogCard from "../../Components/MyBlogCard/MyBlogCard";
 import { client } from "../../client";
-
+import Comments from "../../Components/Comments/Comment";
+import { useNavigate } from "react-router-dom";
 const MyBlog = () => {
   const blog_1 = "./images/blog-post-small-1.jpg";
   const [article, setArticle] = useState([]);
-
+  const navigate = useNavigate();
   const fetchData = async () => {
     try {
       const { items } = await client.getEntries();
@@ -33,6 +34,8 @@ const MyBlog = () => {
         <Grid container gap={2}>
           <Grid item xl={7.5}>
             <MyBlogCard posts={article} />
+            <Comments />
+
           </Grid>
           <Grid item xl={4}>
             <div className={styled.leftSide}>
@@ -40,6 +43,7 @@ const MyBlog = () => {
                 Icon={<CottageIcon />}
                 persentage={"100%"}
                 title={"Home"}
+                onClick={() => navigate("/")}
               />
               <div className={styled.Input}>
                 <input type="text" placeholder="Search In my Blog..." />
@@ -70,6 +74,7 @@ const MyBlog = () => {
                 )}
               </div>
             </div>
+
           </Grid>
         </Grid>
       </div>

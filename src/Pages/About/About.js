@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "./About.module.scss";
 import Pulse from "react-reveal/Pulse";
-
+import { Zoom } from "react-reveal";
 import { Grid } from "@mui/material";
 import BadgeIcon from "@mui/icons-material/Badge";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
@@ -15,6 +15,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import ServiceCard from "../../Components/ServiceCard/ServiceCard";
 import CancelIcon from "@mui/icons-material/Cancel";
 import { useNavigate } from "react-router-dom";
+
 const About = () => {
   const women1 = "./images/woman.jpg";
   const navigate = useNavigate();
@@ -106,9 +107,12 @@ const About = () => {
                       </div>
                     </div>
                     <div className={styled.Icon}>
-                      <span>
-                        <FacebookRoundedIcon />
-                      </span>
+                    
+                        <span>
+                          <FacebookRoundedIcon />
+                        </span>
+
+
                       <span>
                         <TwitterIcon />
                       </span>

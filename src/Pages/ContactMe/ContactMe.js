@@ -25,8 +25,8 @@ const ContactMe = () => {
   const navigate = useNavigate();
   return (
     <div className={styled.ContactMeContainer}>
-      <Grid container >
-        <Grid item xl={0.7}  >
+      <Grid container wrap="no-wrap">
+        <Grid item xl={0.7}>
           <div className={styled.LeftSide}>
             <div className={styled.Icon}>
               <EmailIcon />
@@ -38,7 +38,7 @@ const ContactMe = () => {
             </div>
           </div>
         </Grid>
-        <Grid item xl={11} md={11.3} sm={11.3} xs={11.3}>
+        <Grid item xl={11} md={10.5} sm={11.3} xs={11}>
           <div className={styled.RightSide}>
             <h2>
               CONTACT <span>INFO</span>
@@ -95,82 +95,55 @@ const ContactMe = () => {
                 </div>
               </div>
             </div>
-             <div className={styled.ContactForm}>
+            <div className={styled.ContactForm}>
               <div className={styled.PersonalData}>
                 <h3>Contact Form</h3>
                 <p className={styled.Border}></p>
-                {/* <div className={styled.Form}>
-                  <p>Want to chat? Send me a message!</p>
-                  <div className={styled.FormInput}>
-                    <Box
-                      component="form"
-                      sx={{
-                        "& > :not(style)": { m: 1, width: "35ch" },
-                      }}
-                      noValidate
-                      autoComplete="off"
-                    >
+                <div className={styled.Form}>
+                  <div className={styled.FormItem}>
+                    <p>Want to chat? Send me a message!</p>
+                    <div className={styled.FormInput}>
                       <TextField
                         id="outlined-basic"
                         label="Name"
                         variant="outlined"
-                      />
+                        fullWidth
+                        margin="25px"
+/>
+                      <br />
                       <TextField
                         id="outlined-basic"
                         label="Email"
                         variant="outlined"
+                        fullWidth
                       />
-                    </Box>
-                    <Box
-                      component="form"
-                      sx={{
-                        "& > :not(style)": { m: 1, width: "72ch" },
-                      }}
-                      noValidate
-                      autoComplete="off"
-                    >
+                      <br />
+
                       <TextField
                         id="outlined-basic"
                         label="Subject"
                         variant="outlined"
+                        fullWidth
                       />
-                    </Box>
-                    <Box
-                      component="form"
-                      sx={{
-                        "& > :not(style)": {
-                          m: 1,
-                          width: "64ch",
-                          border: "none",
-                        },
-                      }}
-                      noValidate
-                      autoComplete="off"
-                    >
+
                       <TextareaAutosize
                         aria-label="empty textarea"
                         placeholder="Message"
-                        style={{
-                          height: "15vh",
-                          borderRadius: 5,
-                          padding: "1rem",
-                          fontSize: "18px",
-                          fontFamily: "sans-serif",
-                        }}
+                        className="width"
                       />
-                    </Box>
 
-                    <div className={styled.FormButton}>
-                      <CustomButton
-                        Icon={<NearMeIcon />}
-                        title={"Send"}
-                        item={"Message"}
-                      />
+                      <div className={styled.FormButton}>
+                        <CustomButton
+                          Icon={<NearMeIcon />}
+                          title={"Send"}
+                          item={"Message"}
+                        />
+                      </div>
                     </div>
                   </div>
-                </div> */}
+                </div>
               </div>
-            </div> 
+            </div>
           </div>
         </Grid>
       </Grid>

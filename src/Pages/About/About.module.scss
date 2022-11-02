@@ -151,15 +151,17 @@
             padding: 0.5rem;
             border-radius: 50%;
             background: #fff;
-  
+            
           }
           .Icon{
               padding-top: 1rem;
               padding-bottom: 2rem;
-       
+             
               span{
                   margin-left: 1rem !important;     
+
               }
+              
           }
     }
     .Bottons{
@@ -202,9 +204,7 @@
         h5{
         padding-left: 1.5rem !important;
         }
-        .LeftSide{
-           
-        }
+       
     }
 }
 @media only screen and (max-width:768px) {
@@ -231,15 +231,16 @@
         width: 100%;  
         h2{
             font-size: 1.8rem !important;
-          
+            margin-top: 3.5rem;
+            padding-right: 1.5rem;
             
         }
         h3{
             font-size: 1.2rem !important;
         }
         .CrossButton{
-            right: 1rem !important;
-            top: 1.5rem !important;
+            right: 0.5rem !important;
+            top: 0.5rem !important;
             button svg{
                 
                 font-size: 2rem !important;

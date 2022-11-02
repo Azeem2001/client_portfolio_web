@@ -2,5 +2,47 @@ body{
     background-color: #222222;
     scrollbar-gutter: none;
 }
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  .overlay{
+    position: relative !important;
+    padding: 0 !important;
+    padding-bottom: 2rem !important;
+  }
+  .no-com {
+    background-color: aqua !important;
+  }
+  .example-div {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+  }
+  .example-row {
+    display: flex;
+    width: 100;
+  }
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 20px;
+  }
+  .head-title {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .example-row {
+      display: flex;
+      width: 100;
+      flex-direction: column;
+    }
+  }
+
 
 

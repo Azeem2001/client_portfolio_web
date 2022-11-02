@@ -96,3 +96,22 @@
         }
     }
 }
+
+@media only screen and (max-width:1025px) {
+   
+    .leftSide{
+      display: none;
+    }
+    .MyBlog{
+        width: 90% !important;
+        h1{
+            font-size: 2.5rem !important;
+            font-weight: 600 !important;
+            padding-bottom: 1rem !important;     
+            span{
+                color: #FFB400;
+            }
+        }
+    }
+  
+}
